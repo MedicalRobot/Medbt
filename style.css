@@ -89,7 +89,7 @@ header nav ul li a:hover {
 .feature-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .feature {
@@ -112,12 +112,6 @@ header nav ul li a:hover {
     font-size: 1 rem;
     color: #0e0c0c;
 }
-
-/* Responsif untuk layar kecil */
-@media (max-width: 768px) {
-    .feature {
-        width: 100%; /* Pada layar kecil, setiap kotak akan menempati satu baris penuh */
-    }
 
 /* Harga */
 #pricing p {
