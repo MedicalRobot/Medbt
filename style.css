@@ -28,12 +28,12 @@ header {
 }
 
 header h1 {
-    font-size: 3.2 rem;
+    font-size: 38px;
     margin-bottom: 10px;
 }
 
 header h2 {
-    font-size: 2.5 rem;
+    font-size: 48px;
     font-weight: normal;
 }
 
@@ -51,7 +51,7 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1 rem;
+    font-size: 1.2em;
 }
 
 header nav ul li a:hover {
@@ -64,14 +64,14 @@ header nav ul li a:hover {
 }
 
 .section h2 {
-    font-size: 2 rem;
+    font-size: 32px;
     color: #333;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .section p {
-    font-size: 1 rem;
+    font-size: 18px;
     line-height: 1.6;
     text-align: center;
 }
@@ -93,7 +93,7 @@ header nav ul li a:hover {
 }
 
 .feature {
-    width: 30%;
+    width: 30%; /* Untuk desktop, tiga kotak dalam satu baris */
     background-color: #8dabc3;
     margin: 20px 0;
     padding: 20px;
@@ -103,19 +103,19 @@ header nav ul li a:hover {
 }
 
 .feature h3 {
-    font-size: 1.25 rem;
+    font-size: 22px;
     margin-bottom: 15px;
     color: #090808;
 }
 
 .feature p {
-    font-size: 1 rem;
+    font-size: 16px;
     color: #0e0c0c;
 }
 
 /* Harga */
 #pricing p {
-    font-size: 1.5 rem;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
@@ -132,7 +132,7 @@ header nav ul li a:hover {
 
 .social-icon {
     text-decoration: none;
-    font-size: 1.25;
+    font-size: 20px;
     color: #333;
     display: flex;
     align-items: center;
@@ -175,11 +175,20 @@ form input, form textarea {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ddd;
-    font-size: 1 rem;
+    font-size: 16px;
 }
 
 form button {
-    background-color: #6297c0
+    background-color: #6297c0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4d86a1;
 }
 
 /* Footer */
@@ -188,4 +197,91 @@ footer {
     color: #f4f4f4;
     padding: 10px 0;
     text-align: center;
+}
+
+/* Media Queries untuk Responsif */
+
+/* Tablet (768px ke atas) */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 40px;
+    }
+
+    .feature {
+        width: 45%; /* Dua kotak dalam satu baris */
+    }
+
+    .product-image {
+        max-width: 100%;
+    }
+}
+
+/* Mobile (600px ke atas) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-size: 36px;
+    }
+
+    .feature {
+        width: 100%; /* Satu kotak dalam satu baris */
+        margin: 10px 0;
+    }
+
+    .product-image {
+        max-width: 100%;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icon {
+        font-size: 18px;
+    }
+
+    form {
+        padding: 15px;
+        margin: 0 20px;
+    }
+
+    form input, form textarea {
+        font-size: 14px;
+    }
+
+    form button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+/* Small Mobile (400px ke atas) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icon {
+        font-size: 16px;
+    }
+
+    .product-image {
+        max-width: 100%;
+    }
 }
